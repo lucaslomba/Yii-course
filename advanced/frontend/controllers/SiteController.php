@@ -74,7 +74,10 @@ class SiteController extends Controller
      * @return mixed
      */
     public function actionIndex()
-    {
+    {   
+        \Yii::$app->params['var1'] = 'This is testing of pass';
+
+        $_SESSION['var2'] = 'This is a variable using Session';
         return $this->render('index');
     }
 
