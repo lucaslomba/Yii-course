@@ -2,7 +2,7 @@
 
 ## :sparkles: Por que desse repositório ##
 
-:heavy_check_mark: Estudar o framework Yii e suas funcionalidades;\
+:heavy_check_mark: Estudar o framework Yii e suas funcionalidades
 
 
 ## :rocket: Tecnologias ##
