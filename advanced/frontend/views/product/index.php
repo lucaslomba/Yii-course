@@ -1,5 +1,5 @@
 <?php
-
+$this->title = 'Product index';
 ?>
 <!-- Page Header -->
 <header class="masthead" style="background-image: url('../img/home-bg.jpg')">
