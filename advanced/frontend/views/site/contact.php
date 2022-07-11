@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
                       ->label(false)
                       ->checkbox()
                       ->dropDownList(['value1'=>'display1', 'value2'=>'display2', ...])
-                      ->dropDownList(['value1'=>'display1', 'value2'=>'display2', ...], ['prompt'=>''Select])
+                      ->dropDownList(['value1'=>'display1', 'value2'=>'display2', ...], ['prompt'=>'Select'])
                     -->
 
                     <?= $form->field($model, 'name')->textInput(['autofocus' => true])->label('Full name') ?>
