@@ -27,7 +27,8 @@ $this->title = 'My Yii Application';
                     $body = 
                     Html::img(Url::to('@web/img/home-bg.jpg'), ['class'=>'img-responsive', 'style'=>'width:100%', 'alt'=>'Image']).
                     Html::tag('h2','Man must explore, and this is exploration at its greatest',['class'=>'post-title']).
-                    Html::tag('h3','Problems look mighty small from 150 miles up',['class'=>'post-subtitle'])
+                    Html::tag('h3','Problems look mighty small from 150 miles up',['class'=>'post-subtitle']).
+                    Html::tag('div',Html::ul(['One', 'Two', 'Three', 'Four'], ['class'=>'list-group-item']),['class'=>'list-group'])
                 ?>
                 <?= Html::a($body,['/site/about'],[]) ?>
                 <?=Html::tag('p','Posted by <a href="#">Start Bootstrap</a>on September 24, 2017',['class'=>'post-meta'])?>
