@@ -2,6 +2,8 @@
 
 /** @var yii\web\View $this */
 
+use yii\helpers\Html;
+
 $this->title = 'My Yii Application';
 ?>
       <!-- Page Header -->
@@ -21,16 +23,10 @@ $this->title = 'My Yii Application';
             <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-preview">
                 <a href="post.html">
-                <h2 class="post-title">
-                    Man must explore, and this is exploration at its greatest
-                </h2>
-                <h3 class="post-subtitle">
-                    Problems look mighty small from 150 miles up
-                </h3>
-                </a>
-                <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
-                on September 24, 2017</p>
+                <?=Html::tag('h2','Man must explore, and this is exploration at its greatest',['class'=>'post-title'])?>
+                <?=Html::tag('h3','Problems look mighty small from 150 miles up',['class'=>'post-subtitle'])?>
+            </a>
+            <?=Html::tag('p','Posted by <a href="#">Start Bootstrap</a>on September 24, 2017',['class'=>'post-meta'])?>
             </div>
             <hr>
             <div class="post-preview">
