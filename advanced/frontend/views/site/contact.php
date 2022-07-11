@@ -35,9 +35,19 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="col-lg-5">
                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                    <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+                    <!-- 
+                    options is:
+                      ->radio()
+                      ->label('new text')
+                      ->label(false)
+                      ->checkbox()
+                      ->dropDownList(['value1'=>'display1', 'value2'=>'display2', ...])
+                      ->dropDownList(['value1'=>'display1', 'value2'=>'display2', ...], ['prompt'=>''Select])
+                    -->
 
-                    <?= $form->field($model, 'email') ?>
+                    <?= $form->field($model, 'name')->textInput(['autofocus' => true])->label('Full name') ?>
+
+                    <?= $form->field($model, 'email')->textInput([]) ?>
 
                     <?= $form->field($model, 'subject') ?>
 
