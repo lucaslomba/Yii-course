@@ -3,6 +3,7 @@
 /** @var yii\web\View $this */
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 $this->title = 'My Yii Application';
 ?>
@@ -23,10 +24,11 @@ $this->title = 'My Yii Application';
             <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-preview">
                 <a href="post.html">
-                <?=Html::tag('h2','Man must explore, and this is exploration at its greatest',['class'=>'post-title'])?>
-                <?=Html::tag('h3','Problems look mighty small from 150 miles up',['class'=>'post-subtitle'])?>
-            </a>
-            <?=Html::tag('p','Posted by <a href="#">Start Bootstrap</a>on September 24, 2017',['class'=>'post-meta'])?>
+                    <?=Html::img(Url::to('@web/img/home-bg.jpg'), ['class'=>'img-responsive', 'style'=>'width:100%', 'alt'=>'Image'])?>
+                    <?=Html::tag('h2','Man must explore, and this is exploration at its greatest',['class'=>'post-title'])?>
+                    <?=Html::tag('h3','Problems look mighty small from 150 miles up',['class'=>'post-subtitle'])?>
+                </a>
+                <?=Html::tag('p','Posted by <a href="#">Start Bootstrap</a>on September 24, 2017',['class'=>'post-meta'])?>
             </div>
             <hr>
             <div class="post-preview">
